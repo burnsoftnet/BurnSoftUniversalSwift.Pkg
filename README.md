@@ -1,3 +1,3 @@
 # BurnSoft.Universal
 
-A description of this package.
+A variety of subs and function used for iOS or OS X application that were commonly used. Same as the BurnSoftUniversal Library but in a framework format with unit tests

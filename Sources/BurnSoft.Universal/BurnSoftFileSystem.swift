@@ -13,11 +13,11 @@ open class BurnSoftFileSystem: NSObject
 {
     open class func copyFileFromFilePath(fromPath: String, toPath: String, msg :inout String) -> Bool
     {
-        var bAns : Bool = false
-        var fileManager : FileManager = FileManager()
+        let bAns : Bool = false
+        let fileManager : FileManager = FileManager()
         let FileExistsAtDest: Bool = fileManager.fileExists(atPath: toPath)
         let FileExistsAtSource: Bool = fileManager.fileExists(atPath: fromPath)
-        var DESTDELETESUCCESSFUL : Bool = false
+        var _ : Bool = false
         
         if FileExistsAtSource && FileExistsAtDest
         {
