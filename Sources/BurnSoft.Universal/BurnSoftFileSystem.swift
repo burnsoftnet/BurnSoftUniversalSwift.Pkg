@@ -6,7 +6,9 @@
 //  Copyright © 2019 burnsoft. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
+#endif
 import Foundation
 ///  General class that have misc file operations that have been used in our applications such as, copy file, delete file create directory, get file extension, etc
 open class BurnSoftFileSystem: NSObject

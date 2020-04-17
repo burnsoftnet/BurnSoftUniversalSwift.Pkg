@@ -5,8 +5,10 @@
 //  Created by burnsoft on 10/9/19.
 //  Copyright © 2019 burnsoft. All rights reserved.
 //
-
+#if !os(macOS)
 import UIKit
+#endif
+import Foundation
 ///  Differeent ways to format the date and time as needed.  Some you will allow you to pass
 ///  The Date and time to the function to have it returned as a certain format, while others will
 ///  return the current date and time as that format.  This was just to keep the date and time

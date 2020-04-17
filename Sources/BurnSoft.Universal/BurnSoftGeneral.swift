@@ -6,7 +6,11 @@
 //  Copyright © 2019 burnsoft. All rights reserved.
 //
 
+#if !os(macOS)
 import UIKit
+#elseif os(macOS)
+import Cocoa
+#endif
 ///  Misc Functions that help format content of a string, verify if the value is numeric,
 ///  Get a certain value in a string array, convert Bool to string or convert something as
 ///  simple as y/n yes/no to a boolean true/false/
