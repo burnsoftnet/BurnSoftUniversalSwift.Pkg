@@ -41,6 +41,25 @@ open class BSFileSystem: NSObject
     }
     
     /**
+     Pass the path and file to delete that file
+     - Parameter sPath - full name and path of dile to delete
+     - Throws: string in msg if there is an error
+     - Returns: true of delete was successful, and false if there was an issue
+     */
+    open class func DeleteFileByPath(sPath: String, msg :inout String) ->Bool{
+        let bAns = false;
+        let fileManager : FileManager = FileManager()
+        do {
+            try fileManager.removeItem(atPath: sPath)
+            bAns = true
+            } catch {
+                msg = "Error deleting file: \(error)."
+            }
+        }
+        return bAns
+    }
+    
+    /**
      Create a directory if it doesn't already exist
      
      - Parameter path : full path of the new directory that you want to create
