@@ -32,7 +32,7 @@ class BurnSoftFileSystem_Test: XCTestCase
 //        }
         //self.measure {
             var msg : String = ""
-            let didPass : Bool = BurnSoftFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
+            let didPass : Bool = BSFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
             if !didPass {
               NSLog("ERROR MESSAGE: %@",msg)
             } else {
@@ -43,7 +43,7 @@ class BurnSoftFileSystem_Test: XCTestCase
     func test_createDirectoryIfNotExists()
     {
         var msg : String = ""
-        let didPass : Bool = BurnSoftFileSystem.createDirectoryIfNotExists(path: newDirectory, msg: &msg)
+        let didPass : Bool = BSFileSystem.createDirectoryIfNotExists(path: newDirectory, msg: &msg)
         if !didPass {
           NSLog("ERROR MESSAGE: %@",msg)
         } else {
