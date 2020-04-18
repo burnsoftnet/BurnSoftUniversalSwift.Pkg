@@ -14,7 +14,7 @@ import Cocoa
 ///  Misc Functions that help format content of a string, verify if the value is numeric,
 ///  Get a certain value in a string array, convert Bool to string or convert something as
 ///  simple as y/n yes/no to a boolean true/false/
-open class BurnSoftGeneral: NSObject
+open class BSGeneral: NSObject
 {
     /// This will Fluff/Prep the string for inserting value into a database
     /// It will mostly take out things that can conflict, such as the single qoute

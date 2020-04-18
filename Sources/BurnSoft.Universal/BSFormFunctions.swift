@@ -13,7 +13,7 @@ import Cocoa
 #endif
 /// The Standard formating that is used for our applications Labels, and Text Boxes, along with a quick and easy way to send a message box to the user from the form you are at.
 #if !os(macOS)
-class BurnSoftFormFunctions: UIViewController {
+class BSFormFunctions: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

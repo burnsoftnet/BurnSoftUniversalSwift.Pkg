@@ -62,7 +62,7 @@ class BurnSoftMath_Test: XCTestCase {
     func test_test_averageOf_Int()
     {
         self.measure {
-            let avg = BurnSoftMath.AverageOf(data: dataInt)
+            let avg = BSMath.AverageOf(data: dataInt)
             let didPass : Bool = (avg == expecteddataAvg)
             XCTAssert(didPass)
         }
@@ -71,7 +71,7 @@ class BurnSoftMath_Test: XCTestCase {
     func test_test_averageOf_Double()
     {
         self.measure {
-            let avg = BurnSoftMath.AverageOf(data: dataDoub)
+            let avg = BSMath.AverageOf(data: dataDoub)
             let didPass : Bool = (avg == expecteddataAvg)
             XCTAssert(didPass)
         }
@@ -80,7 +80,7 @@ class BurnSoftMath_Test: XCTestCase {
     func test_GetStandardDeviation_Int()
     {
         self.measure {
-            let stdDev = BurnSoftMath.GetStandardDeviation(data: dataInt)
+            let stdDev = BSMath.GetStandardDeviation(data: dataInt)
             let didPass : Bool = (stdDev == expectedStdDev)
             XCTAssert(didPass)
         }
@@ -89,7 +89,7 @@ class BurnSoftMath_Test: XCTestCase {
     func test_GetStandardDeviation_Dbl()
     {
         self.measure {
-            let stdDev = BurnSoftMath.GetStandardDeviation(data: dataDoub)
+            let stdDev = BSMath.GetStandardDeviation(data: dataDoub)
             let didPass : Bool = (stdDev == expectedStdDev)
             XCTAssert(didPass)
         }
@@ -97,69 +97,69 @@ class BurnSoftMath_Test: XCTestCase {
     
     func test_GetPricePerItem_String()
     {
-        let ppi = BurnSoftMath.GetPricePerItem(price: price, Qty: qty)
+        let ppi = BSMath.GetPricePerItem(price: price, Qty: qty)
         let didPass : Bool = (ppi > expectedppi)
         XCTAssert(didPass)
     }
     func test_GetPricePerItem_Double()
     {
-        let ppi = BurnSoftMath.GetPricePerItem(price: dprice, Qty: dqty)
+        let ppi = BSMath.GetPricePerItem(price: dprice, Qty: dqty)
         let didPass : Bool = (ppi > expectedppi)
         XCTAssert(didPass)
     }
     
     func test_MultiplyTwoItems_StringInt()
     {
-        let value : Int = BurnSoftMath.MultiplyTwoItems(value1: sValue2, value2:  sValue2)
+        let value : Int = BSMath.MultiplyTwoItems(value1: sValue2, value2:  sValue2)
         let didPass = (value == expectedmultiInt)
         XCTAssert(didPass)
     }
     func test_MultiplyTwoItems_StringDouble()
     {
-        let value : Double = BurnSoftMath.MultiplyTwoItems(value1: sValue2, value2:  sValue2)
+        let value : Double = BSMath.MultiplyTwoItems(value1: sValue2, value2:  sValue2)
         let didPass = (value == expectedmulti)
         XCTAssert(didPass)
     }
     func test_MultiplyTwoItems_IntInt()
     {
-        let value : Int = BurnSoftMath.MultiplyTwoItems(value1: iValue2, value2:  iValue2)
+        let value : Int = BSMath.MultiplyTwoItems(value1: iValue2, value2:  iValue2)
         let didPass = (value == expectedmultiInt)
         XCTAssert(didPass)
     }
     func test_MultiplyTwoItems_DoubleDouble()
     {
-        let value : Double = BurnSoftMath.MultiplyTwoItems(value1: dValue2, value2:  dValue2)
+        let value : Double = BSMath.MultiplyTwoItems(value1: dValue2, value2:  dValue2)
         let didPass = (value == expectedmulti)
         XCTAssert(didPass)
     }
     func test_multiplyTwoItems2DecDouble()
     {
-        let value = BurnSoftMath.multiplyTwoItems2DecDouble(value1: pi, value2: 1)
+        let value = BSMath.multiplyTwoItems2DecDouble(value1: pi, value2: 1)
         let didPass: Bool = (value == 3.14)
         XCTAssert(didPass)
     }
     func test_AddTwoItems_IntInt()
     {
-        let value : Int = BurnSoftMath.AddTwoItems(value1: iValue1, value2: iValue2)
+        let value : Int = BSMath.AddTwoItems(value1: iValue1, value2: iValue2)
         let didPass: Bool = (value == expectedAddInt)
         XCTAssert(didPass)
     }
     func test_AddTwoItems_DoubleDouble()
     {
-        let value : Double = BurnSoftMath.AddTwoItems(value1: dValue1, value2: dValue2)
+        let value : Double = BSMath.AddTwoItems(value1: dValue1, value2: dValue2)
         let didPass: Bool = (value == expectedAdd)
         XCTAssert(didPass)
     }
     
     func test_AddTwoItems_StringInt()
     {
-        let value : Int = BurnSoftMath.AddTwoItems(value1: sValue1, value2: sValue2)
+        let value : Int = BSMath.AddTwoItems(value1: sValue1, value2: sValue2)
         let didPass: Bool = (value == expectedAddInt)
         XCTAssert(didPass)
     }
     func test_AddTwoItems_StringDouble()
     {
-        let value : Double = BurnSoftMath.AddTwoItems(value1: sdValue1, value2: sValue2)
+        let value : Double = BSMath.AddTwoItems(value1: sdValue1, value2: sValue2)
         let didPass: Bool = (value == expectedAdd)
         XCTAssert(didPass)
     }

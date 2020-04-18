@@ -14,7 +14,7 @@ import Cocoa
 
 /// General Math functions that have been used in passed programs, that will return the value as needed based on their functions.
 /// Some you can pass strings and get the integer or double results, and some will convert the double / integer calulation back as a string.  which was required for some of the application at the time.
-open class BurnSoftMath: NSObject
+open class BSMath: NSObject
 {
     /// Pass the price and qty to have it broken down to Price per item
     /// - parameter price: The price of the item in String format

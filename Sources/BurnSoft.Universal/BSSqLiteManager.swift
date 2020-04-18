@@ -12,12 +12,12 @@ struct ErrMessages{
     var errMsg = ""
 }
 
-open class DatabaseInfo
+open class BSSqLiteManager : NSObject
 {
-    init()
-    {
-        
-    }
+//    init()
+//    {
+//
+//    }
     
 //    open class func openDatabase(part1DbPath : OpaquePointer) -> OpaquePointer? {
 //      var db: OpaquePointer?
@@ -83,7 +83,7 @@ open class DatabaseInfo
         return false 
       }
       // 5
-      sqlite3_finalize(insertStatement)
+      //sqlite3_finalize(insertStatement)
     }
     
     open class func query(db : OpaquePointer?, sql :String) {
