@@ -14,6 +14,7 @@ class BurnSoftFileSystem_Test: XCTestCase
 {
     let copyfrom = "/Users/burnsoft/UnitTest/fstest/copyme.txt"
     let copyTo = "/Users/burnsoft/UnitTest/fstest/copyto/"
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -28,11 +29,11 @@ class BurnSoftFileSystem_Test: XCTestCase
 //            let didPass : Bool = (avg == expecteddataAvg)
 //            XCTAssert(didPass)
 //        }
-        self.measure {
+        //self.measure {
             var msg : String = ""
-            let didPass = BurnSoftFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
+            let didPass : Bool = BurnSoftFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
             NSLog("ERROR MESSAGE: %@",msg)
             XCTAssert(didPass)
-        }
+        //}
     }
 }

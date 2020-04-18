@@ -27,4 +27,16 @@ open class BurnSoftFileSystem: NSObject
         }
         return bAns
     }
+    open class func createDirectoryIfNotExists(path : String, msg :inout String) -> Bool
+    {
+        let bAns : Bool = false
+        let error : NSError
+        let isDir : Bool = false
+        let fileManager : FileManager = FileManager()
+        if  !FileManager.fileExists(path)
+        {
+            
+        }
+        return bAns
+    }
 }
