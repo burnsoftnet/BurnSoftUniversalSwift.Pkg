@@ -74,7 +74,7 @@ open class BSFileSystem: NSObject
      */
     open class func getFileExtensionbyPath(filePath : String) -> String{
         let pathArray = filePath.split(separator: ".")
-        let fileExtension : String = pathArray[pathArray.endIndex - 1]
+        let fileExtension : String = String(pathArray[pathArray.endIndex - 1])
         return fileExtension;
     }
 }
