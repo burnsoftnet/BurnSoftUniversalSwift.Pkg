@@ -22,7 +22,7 @@ class BurnSoftDateTime_Test: XCTestCase {
     }
     
     func test_GetCurrentDateTime() {
-        let value : String = BurnSoft_Universal.BurnSoftDateTime.GetCurrentDateTime()
+        let value : String = BurnSoft_Universal.BSDateTime.GetCurrentDateTime()
         //let value : String = "324234"
         NSLog(value)
         XCTAssert((value.count > 0))
@@ -32,21 +32,21 @@ class BurnSoftDateTime_Test: XCTestCase {
 
     func test_FormatDate()
     {
-        let value : String = BurnSoft_Universal.BurnSoftDateTime.FormatDate(date: currentDateTime)
+        let value : String = BurnSoft_Universal.BSDateTime.FormatDate(date: currentDateTime)
         NSLog(value)
         XCTAssert((value.count > 0))
     }
     
     func test_FormatLongConnectedByDateAndTime()
     {
-        let value : String = BurnSoftDateTime.FormatLongConnectedByDateAndTime(date: currentDateTime)
+        let value : String = BSDateTime.FormatLongConnectedByDateAndTime(date: currentDateTime)
         NSLog(value)
         XCTAssert((value.count > 0))
     }
     
     func test_FormatLongConnectedDateTimeStamp()
     {
-        let value : String = BurnSoftDateTime.FormatLongConnectedDateTimeStamp()
+        let value : String = BSDateTime.FormatLongConnectedDateTimeStamp()
         NSLog(value)
         XCTAssert((value.count > 0))
     }
