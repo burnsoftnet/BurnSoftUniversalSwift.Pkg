@@ -14,6 +14,7 @@ class BurnSoftFileSystem_Test: XCTestCase
 {
     let copyfrom = "/Users/burnsoft/UnitTest/fstest/copyme.txt"
     let copyTo = "/Users/burnsoft/UnitTest/fstest/copyto/"
+    let newDirectory = "/Users/burnsoft/UnitTest/fstest/copyto/createTest/"
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,8 +33,22 @@ class BurnSoftFileSystem_Test: XCTestCase
         //self.measure {
             var msg : String = ""
             let didPass : Bool = BurnSoftFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
-            NSLog("ERROR MESSAGE: %@",msg)
-            XCTAssert(didPass)
+            if !didPass {
+              NSLog("ERROR MESSAGE: %@",msg)
+            } else {
+                NSLog("file was copied!!")
+            }
         //}
+    }
+    func test_createDirectoryIfNotExists()
+    {
+        var msg : String = ""
+        let didPass : Bool = BurnSoftFileSystem.createDirectoryIfNotExists(path: newDirectory, msg: &msg)
+        if !didPass {
+          NSLog("ERROR MESSAGE: %@",msg)
+        } else {
+            NSLog("Directory was created!")
+        }
+        XCTAssert(didPass)
     }
 }
