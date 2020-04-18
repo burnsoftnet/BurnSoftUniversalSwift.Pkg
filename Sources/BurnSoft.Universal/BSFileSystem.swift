@@ -66,4 +66,15 @@ open class BSFileSystem: NSObject
         }
         return bAns
     }
+    /**
+     Get the extension of the file from the full path
+     
+     - Parameter filePath : full filename with path
+     - Returns: extension of file as string
+     */
+    open class func getFileExtensionbyPath(filePath : String) -> String{
+        let pathArray = filePath.split(separator: ".")
+        let fileExtension : String = pathArray[pathArray.endIndex - 1]
+        return fileExtension;
+    }
 }
