@@ -33,7 +33,10 @@ open class BSSqLiteManager : NSObject
 //        //PlaygroundPage.current.finishExecution()
 //      }
 //    }
-
+    open class func initWithDatabaseFileName(dbFilename : String )
+    {
+        
+    }
     open class func createTable(db : OpaquePointer?, sql :String) {
 //        do{
 //            try {
