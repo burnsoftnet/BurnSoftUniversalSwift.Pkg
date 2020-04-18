@@ -35,6 +35,7 @@ open class BSFileSystem: NSObject
         
         if FileExistsAtSource && FileExistsAtDest
         {
+            //TODO:  Need to finish this function
             //DESTDELETESUCCESSFUL = [self DeleteFileByPath:toPath ErrorMessage:&deleteError];
         }
         return bAns
