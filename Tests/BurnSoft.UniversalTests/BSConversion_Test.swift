@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 import BurnSoft_Universal
 
-class BurnSoftMath_Test: XCTestCase {
+class BSConversion_Test: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         //currentDateTime = Date()

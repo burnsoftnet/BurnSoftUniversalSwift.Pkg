@@ -25,12 +25,6 @@ class BurnSoftFileSystem_Test: XCTestCase
     }
     func test_copyFileFromFilePath()
     {
-//        self.measure {
-//            let avg = BurnSoftMath.AverageOf(data: dataInt)
-//            let didPass : Bool = (avg == expecteddataAvg)
-//            XCTAssert(didPass)
-//        }
-        //self.measure {
             var msg : String = ""
             let didPass : Bool = BSFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
             if !didPass {
@@ -50,5 +44,13 @@ class BurnSoftFileSystem_Test: XCTestCase
             NSLog("Directory was created!")
         }
         XCTAssert(didPass)
+    }
+    func test_getFileExtensionbyPath()
+    {
+        self.measure {
+            let value : String = BSFileSystem.getFileExtensionbyPath(filePath: copyfrom)
+            let didPass : Bool = ( value == "txt")
+            XCTAssert(didPass)
+        }
     }
 }
