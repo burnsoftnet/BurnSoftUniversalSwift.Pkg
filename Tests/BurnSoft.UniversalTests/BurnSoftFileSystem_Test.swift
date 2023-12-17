@@ -26,7 +26,7 @@ class BurnSoftFileSystem_Test: XCTestCase
     func test_copyFileFromFilePath()
     {
             var msg : String = ""
-            let didPass : Bool = BSFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
+        let didPass : Bool = BSFileSystem.copyFileFromFilePath(fromPath: copyfrom, toPath: copyTo, msg: &msg)
             if !didPass {
               NSLog("ERROR MESSAGE: %@",msg)
             } else {
