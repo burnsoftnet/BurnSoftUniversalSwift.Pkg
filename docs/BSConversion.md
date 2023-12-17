@@ -26,4 +26,30 @@ self.measure {
     let value = BSConversion.convertBOOLtoString(value: true)
     let didPass : Bool = (value == "true")
     XCTAssert(didPass)
+    }
+```
+
+## convertBOOLYNtoString
+
+Convert a boolean value to string Yes or No
+
+```swift
+/**
+ Convert a boolean value to string Yes or No
+ 
+ - Parameter value : true or false
+ 
+ - Returns: string "Yes" for true and "No" for false
+ */
+open class func convertBOOLYNtoString(value : Bool) -> String
+```
+
+### EXAMPLE
+
+```swift
+self.measure {
+    let value = BSConversion.convertBOOLYNtoString(value: true)
+    let didPass : Bool = (value == "Yes")
+    XCTAssert(didPass)
+}
 ```
