@@ -5,3 +5,4 @@ This section will tell you the individual classes and their functions, as well a
 ## Classes
 
 * [BSConversion](BSConversion.md) - General Class that contain functions to convert for format one type of data into another
+* [BSDateTime](BSDateTime.md) - 
