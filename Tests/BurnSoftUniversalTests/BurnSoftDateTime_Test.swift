@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import BurnSoft_Universal
+import BurnSoftUniversal
 
 class BurnSoftDateTime_Test: XCTestCase {
     
@@ -22,7 +22,7 @@ class BurnSoftDateTime_Test: XCTestCase {
     }
     
     func test_GetCurrentDateTime() {
-        let value : String = BurnSoft_Universal.BSDateTime.GetCurrentDateTime()
+        let value : String = BurnSoftUniversal.BSDateTime.GetCurrentDateTime()
         //let value : String = "324234"
         NSLog(value)
         XCTAssert((value.count > 0))
@@ -32,7 +32,7 @@ class BurnSoftDateTime_Test: XCTestCase {
 
     func test_FormatDate()
     {
-        let value : String = BurnSoft_Universal.BSDateTime.FormatDate(date: currentDateTime)
+        let value : String = BurnSoftUniversal.BSDateTime.FormatDate(date: currentDateTime)
         NSLog(value)
         XCTAssert((value.count > 0))
     }

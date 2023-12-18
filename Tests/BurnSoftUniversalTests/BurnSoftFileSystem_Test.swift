@@ -7,7 +7,7 @@
 
 import XCTest
 import Foundation
-import BurnSoft_Universal
+import BurnSoftUniversal
 
 
 class BurnSoftFileSystem_Test: XCTestCase

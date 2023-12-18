@@ -1,7 +1,7 @@
 import XCTest
 
-import BurnSoft_UniversalTests
+import BurnSoftUniversalTests
 
 var tests = [XCTestCaseEntry]()
-tests += BurnSoft_UniversalTests.allTests()
+tests += BurnSoftUniversalTests.allTests()
 XCTMain(tests)
