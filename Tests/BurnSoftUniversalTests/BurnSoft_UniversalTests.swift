@@ -1,5 +1,5 @@
 import XCTest
-@testable import BurnSoft_Universal
+@testable import BurnSoftUniversal
 
 final class BurnSoft_UniversalTests: XCTestCase {
     func testExample() {
