@@ -7,7 +7,7 @@
 
 import Foundation
 import XCTest
-import BurnSoft_Universal
+import BurnSoftUniversal
 
 class BSConversion_Test: XCTestCase {
     override func setUp() {

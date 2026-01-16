@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import  BurnSoft_Universal
+import  BurnSoftUniversal
 
 class BurnSoftGeneral_UnitTest: XCTestCase {
 

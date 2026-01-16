@@ -18,8 +18,8 @@ open class BSFileSystem: NSObject
      Simplify the copy and replace method with overwriteoption
      
      - Parameter
-            - fromPath :the source path and file that you want to copy
-            - toPath - new location to copy to
+     - fromPath :the source path and file that you want to copy
+     - toPath - new location to copy to
      
      - Throws: returns errot in msg string
      
@@ -47,15 +47,15 @@ open class BSFileSystem: NSObject
      - Throws: string in msg if there is an error
      - Returns: true of delete was successful, and false if there was an issue
      */
-    open class func DeleteFileByPath(sPath: String, msg :inout String) ->Bool{
-        let bAns = false;
+    open class func DeleteFileByPath(sPath: String, msg :inout String) -> Bool
+    {
+        var bAns : Bool = false
         let fileManager : FileManager = FileManager()
         do {
             try fileManager.removeItem(atPath: sPath)
             bAns = true
-            } catch {
-                msg = "Error deleting file: \(error)."
-            }
+        } catch {
+            msg = "Error deleting file: \(error)."
         }
         return bAns
     }
@@ -92,9 +92,11 @@ open class BSFileSystem: NSObject
      - Parameter filePath : full filename with path
      - Returns: extension of file as string
      */
-    open class func getFileExtensionbyPath(filePath : String) -> String{
+    open class func getFileExtensionbyPath(filePath : String) -> String
+    {
         let pathArray = filePath.split(separator: ".")
         let fileExtension : String = String(pathArray[pathArray.endIndex - 1])
         return fileExtension;
     }
+    
 }
